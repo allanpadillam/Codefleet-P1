@@ -118,8 +118,7 @@ def mostrar_dibujo(longitud_palabra: int, errores: int):
     :param errores: Número de intentos fallidos hasta el momento.
     """
     max_dibujos = len(DIBUJOS)
-
-    # Asegura que errores no sobrepase el límite
+    
     indice_dibujo = min(errores, max_dibujos - 1)
 
     print(DIBUJOS[indice_dibujo])
